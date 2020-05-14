@@ -119,6 +119,7 @@ p{
 
 .textRC img{
   width: 27.5vw;
+  max-width: 800px;
   margin-left: 13.75vw;
 }
 
@@ -130,4 +131,22 @@ p{
 }
 #logo-img{
   max-width: 100%;
+}
+
+@media screen and (max-width: 500px){
+  .textRC{
+    padding-left: 2vw;
+    padding-right: 0vw;
+  }
+  .leftCol{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .leftCol::-webkit-scrollbar {
+    display: none;
+  }
+  .textRC img{
+    width: 100%;
+    margin-left: 0;
+  }
 }
