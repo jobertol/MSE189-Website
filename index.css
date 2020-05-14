@@ -17,6 +17,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.leftCol::-webkit-scrollbar {
+  display: none;
 }
 
 .rightCol{
@@ -133,20 +140,25 @@ p{
   max-width: 100%;
 }
 
+#pfp{
+  max-width: 200px;
+  margin-left: 0;
+}
+
 @media screen and (max-width: 500px){
   .textRC{
     padding-left: 2vw;
     padding-right: 0vw;
   }
-  .leftCol{
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .leftCol::-webkit-scrollbar {
-    display: none;
-  }
   .textRC img{
     width: 100%;
     margin-left: 0;
+  }
+  #pfp{
+    max-width: 200px;
+  }
+  #pitch{
+    width: 213px;
+    height: 120px;
   }
 }
